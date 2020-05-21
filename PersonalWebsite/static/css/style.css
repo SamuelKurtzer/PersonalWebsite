@@ -1,0 +1,46 @@
+#navbar {
+    width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #072547;
+    display: flex;
+    justify-content: space-around;
+}
+
+#navbar a {
+    float: left;
+    text-decoration: none;
+    font-weight: bold;
+    color: #ffffff;
+    display: flex;
+    justify-content: space-around;
+    width: 100%
+}
+#navbar a:hover {
+    color: #dddddd;
+    background: #072547
+}
+
+.card {
+    width: 100%;
+	float: left;
+	margin: 0 0 3em 0;
+	padding: 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background: #072547;
+    display: flex;
+    justify-content: space-around;
+}
+
+iframe {
+    border: none;
+    width: 100%;
+}
+
+iframe a {
+    target: "_parent"
+}
