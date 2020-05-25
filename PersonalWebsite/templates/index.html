@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Samuel Kurtzer</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kognise/water.css@latest/dist/dark.min.css">
+        <link rel="stylesheet" href="{% static 'css/style.css' %}" type="text/css" media="all">
+        <script src="{% static 'js/script.js' %}" charset="utf-8"></script>
+    </head>                     
+    <body>
+        <header>
+            <!-- Title and Navbar -->
+            <h1 id="PageTitle">Samuel Desmond Kurtzer</h1>
+            <nav id="navbar">
+                <a href="/">Home</a>
+                <a href="/portfolio">Portfolio</a>
+                <a href="/blog">Blog</a>
+                <a href="/contact">Contact</a>
+            </nav>
+        </header>
+        <section id="Content">
+            {% block content %}
+            {% endblock %}
+        </section>
+    </body>
+</html>
