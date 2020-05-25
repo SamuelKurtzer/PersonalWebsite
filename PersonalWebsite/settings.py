@@ -29,6 +29,7 @@ ALLOWED_HOSTS = ['PersonalWebsite.eba-bpudexdf.us-west-2.elasticbeanstalk.com',
         'personalwebsite.eba-bpudexdf.us-west-2.elasticbeanstalk.com/', 
         'localhost',
         'personalwebsite-dev.us-west-2.elasticbeanstalk.com',
+        'personalwebsite-dev.ap-southeast-2.elasticbeanstalk.com',
         ]
 
 
@@ -60,7 +61,7 @@ ROOT_URLCONF = 'PersonalWebsite.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [],
+        'DIRS': [os.path.join(BASE_DIR, 'PersonalWebsite/templates'),],
         'APP_DIRS': True,
         'OPTIONS': {
             'context_processors': [
@@ -123,7 +124,11 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/2.1/howto/static-files/
 
-PROJECT_ROOT = os.path.abspath(os.path.dirname(__file__))
-STATIC_ROOT = os.path.join(PROJECT_ROOT, "static")
+
+STATIC_ROOT = os.path.join(BASE_DIR, "static")
+#print(STATIC_ROOT)
 STATIC_URL = '/static/'
+STATICFILES_DIRS = (
+    os.path.join(BASE_DIR, "PersonalWebsite/static/"), # That's it!!
+)   
 
