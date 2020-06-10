@@ -1,13 +1,13 @@
 {% extends "index.html" %}
 {% block content %}
-<h1>Posts</h1>
-
-<ul>
-{% for post in object_list %}
-<li>
-    {{post.title}}<br/>
-    {{post.body}} 
-</li>
-{% endfor %}
-</ul>
+{% load static %}
+<link rel="stylesheet" href="{% static blogstyle.css %}" type="text/css" media="all">
+<ul> {% for post in object_list %}
+    <div class="blogbox">
+        <li>
+            <h4>{{post.title}}</h4><br/>
+            {{post.body}} 
+        </li>
+    </div>
+{% endfor %} </ul>
 {% endblock %}
