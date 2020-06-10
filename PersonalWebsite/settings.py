@@ -25,11 +25,10 @@ SECRET_KEY = '7c^m*m^=i&d+uee#sf0&)h&t*k%d+b^4^lpa^s*87f#3xpp972'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['PersonalWebsite.eba-bpudexdf.us-west-2.elasticbeanstalk.com',
-        'personalwebsite.eba-bpudexdf.us-west-2.elasticbeanstalk.com/', 
+ALLOWED_HOSTS = [
         'localhost',
-        'personalwebsite-dev.us-west-2.elasticbeanstalk.com',
-        'personalwebsite-dev.ap-southeast-2.elasticbeanstalk.com',
+	'3.25.61.90',
+	'52.63.196.220',
         ]
 
 
