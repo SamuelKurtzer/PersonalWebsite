@@ -29,6 +29,7 @@ ALLOWED_HOSTS = [
         'localhost',
 	'3.25.61.90',
 	'52.63.196.220',
+        'samuelkurtzer.com',
         ]
 
 
