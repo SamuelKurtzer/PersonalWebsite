@@ -2,3 +2,6 @@
 .elasticbeanstalk/*
 rootkey.csv
 LightsailDefaultKey-ap-southeast-2.pem
+venv/
+__init__.py
+__pycache__/
