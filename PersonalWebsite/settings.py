@@ -27,6 +27,7 @@ DEBUG = True
 
 ALLOWED_HOSTS = [
         'localhost',
+        '127.0.0.1',
 	'3.25.61.90',
 	'52.63.196.220',
         'samuelkurtzer.com',
