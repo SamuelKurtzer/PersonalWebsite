@@ -2,10 +2,10 @@ from django.shortcuts import render
 from django.views.generic import ListView, DetailView
 from .models import Post
 
-# Create your views here.
-#def blog(request):
-#    return render(request, 'blog.html', {})
-
 class blogList(ListView):
     model = Post
-    template_name = "blog.html"
+    template_name = "blogList.html"
+
+class blogPost(DetailView):
+    model = Post
+    template_name = "blogPost.html"
