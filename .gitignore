@@ -4,5 +4,6 @@ rootkey.csv
 LightsailDefaultKey-ap-southeast-2.pem
 venv/
 __init__.py
-__pycache__/
+*/__pycache__/
+/static/
 db.sqlite3
